@@ -9,4 +9,4 @@ spring:
         git:
           uri: https://github.com/yegecali/ExampleMicroserviceRxJava.git
           search-paths: ConfigRepository
-          default-label: feature-clientserver
+          default-label: feature-eurekaserver
