@@ -1,1 +1,7 @@
-
+server:
+  port: 8001
+spring:
+  application:
+    name: ms-operation
+  config:
+    import: optional:ConfigServer:http://localhost:8888/
