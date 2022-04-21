@@ -4,3 +4,11 @@ spring:
   data:
     mongodb:
       uri:  mongodb+srv://admin:admin@cluster0.r9lfo.mongodb.net/account
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    statusPageUrlPath: ${server.servletPath}/info
+    healthCheckUrlPath: ${server.servletPath}/health
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
