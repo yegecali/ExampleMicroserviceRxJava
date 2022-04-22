@@ -15,15 +15,15 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: ms-account
-          uri: http://localhost:8002
-          predicate:
-            - Path=/ms-account/**
-          filters:
-            - StripPrefix=1
-        - id: ms-operation
-          uri: http://localhost:8001
-          predicate:
-            - Path=/ms-operation/**
-          filters:
-            - StripPrefix=1
+      - id: ms-account
+        uri: lb://ms-account
+        predicate:
+        - Path=/ms-account/**
+        filters:
+        - StripPrefix=1
+      - id: ms-operation
+        uri: lb://ms-operation
+        predicate:
+        - Path=/ms-operation/**
+        filters:
+        - StripPrefix=1
