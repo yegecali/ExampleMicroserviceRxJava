@@ -14,7 +14,8 @@ import java.util.List;
 
 @Service
 public class AccountService {
-
+//    @Autowired
+//    private AccountApi accountApi;
     private AccountApi accountApi;
 
     public AccountService() {

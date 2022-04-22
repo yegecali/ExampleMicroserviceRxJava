@@ -3,11 +3,13 @@ package com.yegecali.MsOperation.client.Api;
 import com.yegecali.MsOperation.client.dto.AccountDto;
 import io.reactivex.Completable;
 import io.reactivex.Single;
+import org.springframework.cloud.square.retrofit.core.RetrofitClient;
 import org.springframework.stereotype.Component;
 import retrofit2.http.*;
 
 import java.util.List;
 
+@RetrofitClient("ms-account")
 public interface AccountApi {
     @GET("api/account")
     Single<List<AccountDto>> listAccount();
