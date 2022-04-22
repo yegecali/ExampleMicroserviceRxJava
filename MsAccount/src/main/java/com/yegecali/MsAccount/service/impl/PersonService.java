@@ -26,7 +26,7 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public Single<PersonDto> getById() {
+    public Single<PersonDto> getById(String id) {
         return null;
     }
 

@@ -10,7 +10,7 @@ public interface BaseService<ENTITY, ID> {
     Single<ENTITY> add(ENTITY e);
     Completable update(ENTITY e, ID id);
     Single<List<ENTITY>> getAll();
-    Single<ENTITY> getById();
+    Single<ENTITY> getById(ID id);
     Completable deleteById(ID id);
 
 }

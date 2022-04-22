@@ -21,7 +21,3 @@ t
 DMsAccount/src/main/java/com/yegecali/MsAccount/model/BaseEntity.java,c\9\c922f91965a315b0edab73cfaa515ac6efee461f
 u
 EMsAccount/src/main/java/com/yegecali/MsAccount/type/TypeDocument.java,5\9\592aa573f367d3efa2c73f4852896a40d5c5d0e2
-€
-PMsAccount/src/main/java/com/yegecali/MsAccount/repository/AccountRepository.java,3\9\3903b7a6f48c7d66d9581e557e61dbd2ed0289db
-
-OMsAccount/src/main/java/com/yegecali/MsAccount/repository/PersonRepository.java,f\6\f6d3c9f8d08773f7b23f9aa63f386cf8685d5e81
