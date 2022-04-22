@@ -4,12 +4,14 @@ import com.yegecali.MsAccount.dto.PersonDto;
 import com.yegecali.MsAccount.service.IPersonService;
 import io.reactivex.Completable;
 import io.reactivex.Single;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PersonService implements IPersonService {
     @Override
-    public Single<PersonDto> add(String s) {
+    public Single<PersonDto> add(PersonDto e) {
         return null;
     }
 
